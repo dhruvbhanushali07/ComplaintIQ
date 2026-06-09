@@ -29,6 +29,5 @@ ComplaintIQ is an end-to-end Machine Learning pipeline and interactive web dashb
 ├── generate_and_train.py    # Generates/cleans dataset & trains the Random Forest model
 ├── model.pkl                # Pre-trained RandomForest Classifier
 ├── stats.json               # Pre-computed analytics for rapid dashboard loading
-├── complaints_dataset.csv   # Dataset used for model training
 ├── requirements.txt         # Python dependencies for local and production environments
 └── .gitignore               # Git ignore rules
