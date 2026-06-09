@@ -1,0 +1,278 @@
+{
+  "accuracy": 92.9,
+  "confusion_matrix": [
+    [
+      927,
+      46
+    ],
+    [
+      25,
+      2
+    ]
+  ],
+  "classification_report": {
+    "Resolved": {
+      "precision": 0.9737394957983193,
+      "recall": 0.9527235354573484,
+      "f1-score": 0.9631168831168831,
+      "support": 973.0
+    },
+    "Unresolved": {
+      "precision": 0.041666666666666664,
+      "recall": 0.07407407407407407,
+      "f1-score": 0.05333333333333334,
+      "support": 27.0
+    },
+    "accuracy": 0.929,
+    "macro avg": {
+      "precision": 0.507703081232493,
+      "recall": 0.5133988047657112,
+      "f1-score": 0.5082251082251082,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.9485735294117646,
+      "recall": 0.929,
+      "f1-score": 0.9385527272727273,
+      "support": 1000.0
+    }
+  },
+  "feature_importance": {
+    "Product_Category": 0.134257,
+    "Issue_Type": 0.175244,
+    "Complaint_Month": 0.180337,
+    "Complaint_DayOfWeek": 0.083775,
+    "Company": 0.136947,
+    "State": 0.152428,
+    "Submitted_via": 0.096117,
+    "Tags": 0.040896
+  },
+  "total_complaints": 5000,
+  "resolved_count": 4866,
+  "unresolved_count": 134,
+  "prod_labels": [
+    "Mortgage",
+    "Debt Collection",
+    "Credit Reporting",
+    "Bank Account",
+    "Credit Card",
+    "Consumer Loan",
+    "Student Loan",
+    "Other"
+  ],
+  "prod_resolved": [
+    1407,
+    934,
+    919,
+    571,
+    547,
+    204,
+    188,
+    60
+  ],
+  "prod_unresolved": [
+    66,
+    14,
+    0,
+    15,
+    29,
+    1,
+    7,
+    0
+  ],
+  "monthly_trend_data": [
+    160,
+    169,
+    228,
+    260,
+    154,
+    3183,
+    144,
+    123,
+    132,
+    149,
+    148,
+    150
+  ],
+  "sub_labels": [
+    "Web",
+    "Referral",
+    "Postal mail",
+    "Phone",
+    "Fax",
+    "Email"
+  ],
+  "sub_data": [
+    3445,
+    833,
+    346,
+    307,
+    65,
+    4
+  ],
+  "company_labels": [
+    "Other",
+    "BANK OF AMERICA, NATIONAL ASSOCIATION",
+    "Experian Information Solutions Inc.",
+    "WELLS FARGO & COMPANY",
+    "EQUIFAX, INC.",
+    "JPMORGAN CHASE & CO.",
+    "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+    "CITIBANK, N.A.",
+    "OCWEN LOAN SERVICING LLC",
+    "CAPITAL ONE FINANCIAL CORPORATION"
+  ],
+  "company_data": [
+    2449,
+    440,
+    328,
+    328,
+    293,
+    292,
+    260,
+    226,
+    156,
+    126
+  ],
+  "timely_labels": [
+    "Other",
+    "BANK OF AMERICA, NATIONAL ASSOCIATION",
+    "Experian Information Solutions Inc.",
+    "WELLS FARGO & COMPANY",
+    "EQUIFAX, INC.",
+    "JPMORGAN CHASE & CO.",
+    "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+    "CITIBANK, N.A.",
+    "OCWEN LOAN SERVICING LLC",
+    "CAPITAL ONE FINANCIAL CORPORATION"
+  ],
+  "timely_data": [
+    80.9,
+    97.6,
+    91.2,
+    87.4,
+    74.5,
+    74.5,
+    71.7,
+    95.1,
+    87.4,
+    90.5
+  ],
+  "disputed_labels": [
+    "BANK OF AMERICA, NATIONAL ASSOCIATION",
+    "CAPITAL ONE FINANCIAL CORPORATION",
+    "CITIBANK, N.A.",
+    "EQUIFAX, INC.",
+    "Experian Information Solutions Inc.",
+    "JPMORGAN CHASE & CO.",
+    "OCWEN LOAN SERVICING LLC",
+    "Other",
+    "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+    "WELLS FARGO & COMPANY"
+  ],
+  "disputed_data": [
+    23.4,
+    20.6,
+    15.5,
+    23.9,
+    12.5,
+    18.5,
+    26.9,
+    17.6,
+    11.9,
+    25.0
+  ],
+  "state_labels": [
+    "Other",
+    "CA",
+    "FL",
+    "TX",
+    "NY",
+    "GA",
+    "PA",
+    "NJ",
+    "IL",
+    "MD"
+  ],
+  "state_data": [
+    1925,
+    729,
+    480,
+    381,
+    368,
+    231,
+    194,
+    187,
+    179,
+    169
+  ],
+  "product_categories": [
+    "Bank Account",
+    "Consumer Loan",
+    "Credit Card",
+    "Credit Reporting",
+    "Debt Collection",
+    "Mortgage",
+    "Other",
+    "Payday loan",
+    "Student Loan"
+  ],
+  "issue_types": [
+    "Account opening, closing, or management",
+    "Application, originator, mortgage broker",
+    "Communication tactics",
+    "Cont'd attempts collect debt not owed",
+    "Credit reporting company's investigation",
+    "Deposits and withdrawals",
+    "Disclosure verification of debt",
+    "Incorrect information on credit report",
+    "Loan modification,collection,foreclosure",
+    "Loan servicing, payments, escrow account",
+    "Managing the loan or lease",
+    "Other"
+  ],
+  "companies": [
+    "BANK OF AMERICA, NATIONAL ASSOCIATION",
+    "CAPITAL ONE FINANCIAL CORPORATION",
+    "CITIBANK, N.A.",
+    "EQUIFAX, INC.",
+    "Experian Information Solutions Inc.",
+    "JPMORGAN CHASE & CO.",
+    "Navient Solutions, LLC.",
+    "OCWEN LOAN SERVICING LLC",
+    "Other",
+    "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+    "WELLS FARGO & COMPANY"
+  ],
+  "states": [
+    "CA",
+    "FL",
+    "GA",
+    "IL",
+    "MD",
+    "NJ",
+    "NY",
+    "Other",
+    "PA",
+    "TX",
+    "VA"
+  ],
+  "submitted_vias": [
+    "Email",
+    "Fax",
+    "Phone",
+    "Postal mail",
+    "Referral",
+    "Web"
+  ],
+  "tags": [
+    "None",
+    "Older American",
+    "Older American, Servicemember",
+    "Servicemember"
+  ],
+  "label_classes": [
+    "Resolved",
+    "Unresolved"
+  ]
+}
