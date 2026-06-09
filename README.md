@@ -1,32 +1,33 @@
-# ComplaintIQ — Customer Complaint Analysis & Resolution Prediction
+# ComplaintIQ 📊🤖
+**Customer Complaint Analysis & Resolution Prediction Platform**
 
-## Setup & Run
+ComplaintIQ is an end-to-end Machine Learning pipeline and interactive web dashboard. It analyzes consumer complaints and uses a Random Forest Classifier to predict whether a new complaint will be resolved or remain unresolved, helping businesses prioritize customer service resources.
 
-```bash
-pip install -r requirements.txt
-python app.py
-```
+**🚀 Live Demo:** https://complaintiq-app.onrender.com/
 
-Then open: http://localhost:5050
+---
 
-## Structure
+## ✨ Features
 
-- `generate_and_train.py` — Generates synthetic dataset + trains Random Forest model
-- `app.py`               — Flask web dashboard (all-in-one)
-- `model.pkl`            — Pre-trained RandomForest (200 trees, 76.7% accuracy)
-- `stats.json`           — Pre-computed analytics for dashboard
-- `complaints_dataset.csv` — 3,000-row synthetic dataset
+- **Overview Dashboard**: High-level KPIs, priority distribution, issue frequency, and monthly volume trends.
+- **Deep-Dive Analysis**: Visualizes resolution rates by product category, geographic state, and submission channel.
+- **Model Performance**: Transparent model evaluation including a confusion matrix, feature importance ranking, and classification reports.
+- **Prediction Engine**: Real-time inference API. Input complaint details to get an instant resolution prediction and confidence score.
 
-## Re-train Model
+## 🛠 Tech Stack
+- **Backend:** Python, Flask, Gunicorn
+- **Machine Learning:** Scikit-Learn, Pandas, NumPy
+- **Frontend:** HTML5, CSS3, Chart.js
 
-```bash
-python generate_and_train.py
-python app.py
-```
+---
 
-## Features
+## 📁 Project Structure
 
-- **Overview Tab**: KPIs, priority distribution, issue frequency, monthly volume
-- **Analysis Tab**: Resolution rates by category & priority, avg resolution time
-- **Model Tab**: Confusion matrix, feature importance, classification report
-- **Predict Tab**: Input complaint details → get resolution prediction + confidence
+```text
+├── app.py                   # Flask web dashboard and API endpoints
+├── generate_and_train.py    # Generates/cleans dataset & trains the Random Forest model
+├── model.pkl                # Pre-trained RandomForest Classifier
+├── stats.json               # Pre-computed analytics for rapid dashboard loading
+├── complaints_dataset.csv   # Dataset used for model training
+├── requirements.txt         # Python dependencies for local and production environments
+└── .gitignore               # Git ignore rules
