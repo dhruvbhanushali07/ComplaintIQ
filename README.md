@@ -4,6 +4,7 @@
 ComplaintIQ is an end-to-end Machine Learning pipeline and interactive web dashboard. It analyzes consumer complaints and uses a Random Forest Classifier to predict whether a new complaint will be resolved or remain unresolved, helping businesses prioritize customer service resources.
 
 **🚀 Live Demo:** https://complaintiq-app.onrender.com/
+**🚀 Dataset Used:** https://www.kaggle.com/datasets/selener/consumer-complaint-database/
 
 ---
 
